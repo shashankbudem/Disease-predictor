@@ -6,7 +6,7 @@ from PIL import Image
 from tensorflow.keras.models import load_model
 from trial import find_hosp
 from chat import load_chatbot,chatbot_output
-# from scrap import get_doctors
+from scrap import get_doctors
 
 app = Flask(__name__)
  
@@ -36,6 +36,15 @@ def home():
     # k = get_doctors('Kolkata',700031)
     # print(k)
     return render_template('home.html')
+
+def foo():
+    bar = get_doctors('Kolkata',700031)
+    return bar
+
+@app.route('/docdet')
+def index():
+    bar = get_doctors('Kolkata',700031)
+    return render_template('doctordetails.html', foobar=bar)
 
 @app.route("/services")
 def services():

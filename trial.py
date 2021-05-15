@@ -14,6 +14,9 @@ def find_hosp(city):
     driver.find_element_by_id("searchbox-searchbutton").click()
     # print(driver.current_url)
     sleep(5)
+    curl = driver.current_url
     driver.close()
-    return driver.current_url
+    return curl
+
+
 

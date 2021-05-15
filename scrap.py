@@ -1,15 +1,16 @@
 from selenium import webdriver
-from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from bs4 import BeautifulSoup
-from selenium.webdriver.common.action_chains import ActionChains
-
 import time
+from selenium.webdriver.chrome.options import Options
+
+chromeOptions = Options()
+chromeOptions.headless = True
+
+
 # driver = webdriver.Firefox(executable_path="C://chromedriver_win32/chromedriver.exe")
 options = webdriver.ChromeOptions()
 options.add_argument('--headless')
-driver = webdriver.Chrome(options=options)
+# driver = webdriver.Chrome(options=options)
 
 # options = webdriver.FirefoxOptions()
 # options.add_argument('--headless')
@@ -18,6 +19,8 @@ driver = webdriver.Chrome(options=options)
 
 def get_doctors(city, pincode):
     t1 = time.perf_counter()
+    #driver = webdriver.Chrome(options=chromeOptions)
+    driver = webdriver.Chrome()
     driver.get("https://www.justdial.com/{}/General-Physician-Doctors-in-{}/nct-10892680".format(city, pincode))
     while True:
         try:
