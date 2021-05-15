@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+   
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark" style="background-color:white !important;">
+        
+       
+         <div class="collapse navbar-collapse" id="navbarNav">
+           <ul>
+             <li>
+               <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+             </li>
+             <li >
+              <a class="nav-link" href="{{ url_for('services') }}">Our Services</a>
+            </li>
+             <li >
+               <a class="nav-link" href="{{ url_for('diabetesPage') }}">Diabetes</a>
+             </li>
+            
+             <li >
+                <a class="nav-link" href="{{ url_for('heartPage') }}">Heart</a>
+             </li>
+             <li >
+                <a class="nav-link" href="{{ url_for('kidneyPage') }}">Kidney</a>
+              </li>
+              <li >
+                <a class="nav-link" href="{{ url_for('liverPage') }}">Liver</a>
+              </li>
+              <li >
+                <a class="nav-link" href="{{ url_for('malariaPage') }}">Malaria</a>
+              </li>
+              <li >
+                <a class="nav-link" href="{{ url_for('pneumoniaPage') }}">Pneumonia</a>
+              </li>
+           </ul>
+         </div>
+       </nav>
+
+<center>
+<h1>Disease Chatbot</h1>
+<div>
+<div id = "chatbox">
+<p class = "botText"><span>Hi! Iam your Chatterbot.</span></p>
+</div>
+
+<div id = "userInput">
+
+<input id ="textInput" type ="text" name="msg" placeholder="Message">
+<input id = "buttonInput" type = "submit" value="Send">
+</div>
+<script>
+function getBotResponse(){
+var rawText = $("#textInput").val();
+var userHtml = '<p class = "userText"><span>' + rawText + '</span></p>';
+$("#textInput").val("");
+$("#chatbox").append(userHtml);
+document.getElementById('userInput').scrollIntoView({block:'start',behaviour:'smooth'});
+$.get("/get", {msg:rawText }).done(function(data) {
+var botHtml = '<p class ="botText"><span>' + data + '</span></p>';
+$("#chatbox").append(botHtml);
+document.getElementById('userInput').scrollIntoView({block : 'start',behaviour:'smooth'});
+});
+}
+$("#textInput").keypress(function(e) {
+if(e.which == 13) {
+getBotResponse();
+}
+});
+$("#buttonInput").click(function() {
+getBotResponse();
+})
+</script>
+</div>
+</center>
+</body>
+</html>

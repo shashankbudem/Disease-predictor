@@ -1,0 +1,49 @@
+1620835994044	geckodriver	INFO	Listening on 127.0.0.1:15432
+1620845767030	geckodriver	INFO	Listening on 127.0.0.1:15957
+1620846736306	geckodriver	INFO	Listening on 127.0.0.1:1156
+1620846739872	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\shanm\\AppData\\Local\\Temp\\rust_mozprofileyWQJMg"
+*** You are running in headless mode.
+1620846741389	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1620846753756	Marionette	INFO	Listening on port 1164
+1620846755198	Marionette	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Listening on 127.0.0.1:1254
+1620846907318	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\shanm\\AppData\\Local\\Temp\\rust_mozprofile3hyJZw"
+*** You are running in headless mode.
+1620846911325	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1620846920043	Marionette	INFO	Listening on port 1263
+1620846920258	Marionette	WARN	TLS certificate errors will be ignored for this session
+1620846984909	geckodriver	INFO	Listening on 127.0.0.1:1320
+1620846987983	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\shanm\\AppData\\Local\\Temp\\rust_mozprofileFxsP6J"
+*** You are running in headless mode.
+1620846990971	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620846997539	Marionette	INFO	Listening on port 1328
+1620846997655	Marionette	WARN	TLS certificate errors will be ignored for this session
+1620847017952	geckodriver	INFO	Listening on 127.0.0.1:1373
+1620847021035	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\shanm\\AppData\\Local\\Temp\\rust_mozprofilerKsEj1"
+*** You are running in headless mode.
+1620847024261	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1620847037975	Marionette	INFO	Listening on port 1381
+1620847038425	Marionette	WARN	TLS certificate errors will be ignored for this session
+1620847248491	geckodriver	INFO	Listening on 127.0.0.1:1490
+1620847251393	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\shanm\\AppData\\Local\\Temp\\rust_mozprofileBfYkwp"
+*** You are running in headless mode.
+1620847257343	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1620847280040	Marionette	INFO	Listening on port 1498
+1620847282869	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: , line 0: NS_ERROR_NOT_AVAILABLE
+1621016315374	geckodriver	INFO	Listening on 127.0.0.1:56581
+1621078511024	geckodriver	INFO	Listening on 127.0.0.1:11508
+1621078535778	geckodriver	INFO	Listening on 127.0.0.1:11518
+Invalid port. Exiting...

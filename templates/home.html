@@ -1,0 +1,208 @@
+
+{% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+    <header>
+        
+        <header>
+            <!-- header inner -->
+            <div class="header_bg">
+               <div class="header">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                           <div class="full">
+                              <div class="center-desk">
+                                 <div class="logo">
+                                    
+                                    
+                                    
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                           <ul class="costomer">
+                              <li>For assistance <a href="{{ url_for('home') }}">Call Us : 1234567890</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br>
+               <br>
+               <!-- end header inner -->
+               <!-- end header -->
+               <!-- banner -->
+               <section class="banner_main">
+                   <br>
+                  <div class="container-fluid">
+                     <div class="row d_flex">
+                        <div class="col-md-5">
+                           <div class="text-bg">
+                              <span>Join Us <br> Be fit with Us</span>
+                              <h1>Check your Symptoms</h1>
+                              <p>Know the remedies, suggestions and We make you healthier</p>
+                              <a href="{{ url_for('home') }}">Get Started</a>
+                           </div>
+                        </div>
+                        <div class="col-md-7">
+                           <div class="text-img">
+                              <figure><img src="{{ url_for('static', filename='images/img.png') }}" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </section>
+            </div>
+            <div id="service" class="three_box">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                         <div class="Soft-box">
+                            <i><img src="{{ url_for('static', filename='images/service1.png') }}" alt="#" /></i>
+                            <h3> Health</h3>
+                            <p>health referred to the ability to maintain homeostasis and recover from insults. Mental, intellectual, emotional and social health referred to a person's ability to handle stress, to acquire skills, to maintain relationships </p> </div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                         <div class="Soft-box">
+                            <i><img src="{{ url_for('static', filename='images/service2.png') }}" alt="#" /></i>
+                            <h3>Fitness</h3>
+                            <p>An important way to maintain your personal health is to have a healthy diet. A healthy diet includes a variety of plant-based and animal-based foods that provide nutrients to your body. Such nutrients give you energy and keep your body running.</p></div>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                         <div class="Soft-box">
+                            <i><img src="{{ url_for('static', filename='images/service3.png') }}" alt="#" /></i>
+                            <h3>Hygiene</h3>
+                            <p>Hygiene refers to conditions and practices that help to maintain health and prevent the spread of diseases.all of which form resources for resiliency and independent living. This opens up many possibilities for health to be taught, strengthened and learned.</p>  </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div id="why" class="weare">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="titlepage">
+                            <h2>Who <span class="white">We Are</span></h2>
+                         </div>
+                      </div>
+                   </div>
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="main_weare">
+                            <div class="row">
+                               <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                                  <div id="box_ho" class="weare-img_box">
+                                     <figure><img src="{{ url_for('static', filename='images/why1.png') }}" alt="#" /></figure>
+                                  </div>
+                               </div>
+                               <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                                  <div class="weare-box">
+                                     <h3>What we do</h3>
+                                     <p>We help you too get fit and healthy. Share your health issues with us. Will find the solutions.</p>
+                                     <a class="read_more bg" href="#">Read More</a>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                         <div class="main_weare2 ">
+                            <div class="row">
+                               <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                                  <div id="box_ho" class="weare-img_box">
+                                     <figure><img src="{{ url_for('static', filename='images/why2.png') }}" alt="#" /></figure>
+                                  </div>
+                               </div>
+                               <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                                  <div class="weare-box">
+                                     <h3> How to check.</h3>
+                                     <p>Login with your phone/laptop, Enter your Symptoms. Will guide you the next steps and measures to take.</p>
+                                     <a class="read_more bg" href="#">Read More</a>
+                                  </div>
+                               </div>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div  class="asked_main">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="titlepage">
+                            <h2>Frequently Asked <span class="white"> Questions</span></h2>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="container-fluid">
+                   <div class="row">
+                      <div class="col-md-6">
+                         <div class="ask_img">
+                            <figure><img src="{{ url_for('static', filename='images/ask.jpg') }}" alt="#"/></figure>
+                         </div>
+                      </div>
+                      <div class="col-md-6">
+                         <div class="ask_box">
+                            <div class="simpaly">
+                               <div class="slider"><span>+</span><a href="#">
+                                     
+                                  What is Home Care?   </a>
+                               </div>
+                               <div class="content">
+                                  <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its l
+                                     ore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages 
+                                  </p>
+                               </div>
+                            </div>
+                            <div class="simpaly">
+                               <div class="slider"><span>+</span><a href="#">
+                                  Home Health Care vs. Non-Medical Home Care
+                                 </a>
+                               </div>
+                               <div class="content">
+                                  <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its l
+                                     ore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages 
+                                  </p>
+                               </div>
+                            </div>
+                            <div class="simpaly">
+                               <div class="slider"><span>+</span><a href="#">
+                                  Home Care Safety
+                                  </a>
+                               </div>
+                               <div class="content">
+                                  <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its l
+                                     ore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages 
+                                  </p>
+                               </div>
+                            </div>
+                            <div class="simpaly">
+                               <div class="slider"><span>+</span><a href="#">
+                                  
+       Considering Home Care Staff
+                                  </a>
+                               </div>
+                               <div class="content">
+                                  
+                                  <p> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its l
+                                     ore-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages 
+                                  </p>
+                               </div>
+                            </div>
+                            
+                         </div>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             </div>
+            
+         </header>
+         
+         
+         
+{% endblock %}

@@ -1,0 +1,113 @@
+
+    
+    {% extends 'main.html' %}
+{% block content %}
+{% if message %}
+        <div class="alert alert-danger">{{ message }}</div>
+    {% endif %}
+    
+    
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Our Services</h1>
+            <span>We are over 20 years of experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-services">
+      <div class="container">
+        <div class="row" id="tabs">
+          
+          <div class="col-md-8">
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <img src="{{ url_for('static', filename='assets/images/service_01.jpg') }}" alt="">
+                <h4>Diabetes</h4>
+                <p>Diabetes mellitus, commonly known as diabetes, is a metabolic disease that causes high blood sugar. The hormone insulin moves sugar from the blood into your cells to be stored or used for energy. With diabetes, your body either doesn’t make enough insulin or can’t effectively use the insulin it does make.
+                <br><br>
+                A rare condition called diabetes insipidus is not related to diabetes mellitus, although it has a similar name. It’s a different condition in which your kidneys remove too much fluid from your body.
+
+                Each type of diabetes has unique symptoms, causes, and treatments. Learn more about how these types differ from one another.
+                  <br><br>
+                <center> <a href="{{ url_for('diabetesPage') }}"> Click here, to get report  </a></center>
+              </p>
+              </article>
+              <br>
+
+              <article id='tabs-2'>
+                <img src="{{ url_for('static', filename='assets/images/service_02.jpg') }}" alt="">
+                <h4>Kidney</h4>
+                <p>The kidneys filter waste and excess fluid from the blood. As kidneys fail, waste builds up.<br><br>
+                  Symptoms develop slowly and aren't specific to the disease. Some people have no symptoms at all and are diagnosed by a lab test.
+                  Medication helps manage symptoms. In later stages, filtering the blood with a machine (dialysis) or a transplant may be required.
+                  <br><br>
+                  <center> <a href="{{ url_for('kidneyPage') }}"> Click here, to get report  </a></center>
+                  
+                </p>
+                </article>        <br>
+              <article id='tabs-3'>
+                <img src="{{ url_for('static', filename='assets/images/service_03.jpg') }}" alt="">
+                <h4>Liver</h4>
+
+                <p>Liver disease is any disturbance of liver function that causes illness. The liver is responsible for many critical functions within the body and should it become diseased or injured, the loss of those functions can cause significant damage to the body. Liver disease is also referred to as hepatic disease.
+                  <br><br>
+                  <center> <a href="{{ url_for('liverPage') }}"> Click here, to get report  </a></center>
+                  </p>
+                </article>
+                <br>
+              <article id='tabs-4'>
+
+                <img src="{{ url_for('static', filename='assets/images/single_service_04.jpg') }}" alt="">
+                <h4>Malaria</h4>
+                <p>
+                  A disease caused by a plasmodium parasite, transmitted by the bite of infected mosquitoes.
+The severity of malaria varies based on the species of plasmodium.<br><br>
+Symptoms are chills, fever and sweating, usually occurring a few weeks after being bitten.
+People travelling to areas where malaria is common typically take protective drugs before, during and after their trip. Treatment includes antimalarial drugs.
+<br><br>
+<center> <a href="{{ url_for('malariaPage') }}"> Click here, to get report  </a></center>
+                </p>
+                </article>
+              <article id='tabs-5'>
+                <img src="{{ url_for('static', filename='assets/images/single_service_05.jpg') }}" alt="">
+                <h4>Pneumonia </h4>
+                <p>Infection that inflames air sacs in one or both lungs, which may fill with fluid.
+                  With pneumonia, the air sacs may fill with fluid or pus. The infection can be life-threatening to anyone, but particularly to infants, children and people over 65.
+                  Symptoms include a cough with phlegm or pus, fever, chills and difficulty breathing.<br><br>
+                  Antibiotics can treat many forms of pneumonia. Some forms of pneumonia can be prevented by vaccines.
+                  <br><br>
+<center> <a href="{{ url_for('pneumoniaPage') }}"'> Click here, to get report  </a></center>
+                </p>
+                    </article>
+              
+                  
+                
+                
+                
+                
+                </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    
+
+
+
+    
+    
+  
+    {% endblock %}
+
+   
+
