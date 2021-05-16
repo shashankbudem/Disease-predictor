@@ -5,7 +5,7 @@
         table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
 }
         td, th {
   border: 1px solid #dddddd;
@@ -15,22 +15,7 @@
         tr:nth-child(even) {
   background-color: #dddddd;
 }
-a:link {
-  text-decoration: none;
-}
 
-a:visited {
-  color: blue;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a:active {
-  text-decoration: underline;
-}
     </style>
 <title>Test App</title>
 </head>
@@ -53,16 +38,30 @@ a:active {
 <table>
     <tr>
     <th>Hospital Name</th>
-    <th>Website</th>
+    <th>Hospital picture</th>
     <th>Rating</th>
           <th>Address</th>
   </tr>
         {% for k1, v1 in foobar.items() %}
     <tr>
             {% for k2, v2 in v1.items() %}
-        <td><a href="{{v2}}" target="_blank">{{v2}}</a></td>
-            {% endfor %}
-        </tr>
+        {% if k2 == "name" %}
+        <td>{{v2}}</td>
+        {% endif %}
+
+        {% if k2 == "image" %}
+        <td><img src="{{v2}}" alt="HTML5 Icon" style="width:128px;height:128px;"></td>
+        {% endif %}
+
+        {% if k2 == "rating" %}
+        <td>{{v2}}</td>
+        {% endif %}
+
+        {% if k2 == "address" %}
+        <td>{{v2}}</td>
+        {% endif %}
+
+        {% endfor %}
         {% endfor %}
     </table>
 </body>
