@@ -36,14 +36,6 @@ def home():
     # print(k)
     return render_template('home.html')
 
-def foo():
-    bar = get_doctors('Kolkata',700031)
-    return bar
-
-@app.route('/docdet')
-def index():
-    bar = get_doctors('Kolkata',700031)
-    return render_template('doctordetails.html', foobar=bar)
 
 @app.route("/services")
 def services():
@@ -77,6 +69,18 @@ def pneumoniaPage():
 def chatbotPage():
     return render_template('chatbot.html')
 
+@app.route("/city", methods=['GET','POST'])
+def cityPage():
+    return render_template('city.html')
+
+@app.route('/docdet',methods=['GET', 'POST'])
+def index():
+    if request.method == 'POST':
+        city = request.form["city"]
+        pin = request.form["pincode"]
+    bar = get_doctors(city,pin)
+    return render_template('doctordetails.html', foobar=bar)
+
 @app.route("/hospital", methods=['POST','GET'])
 def hospital():
     return render_template('hospital.html')
@@ -85,7 +89,6 @@ def hospital():
 def getRes():
     userText = request.args.get("msg")
     return str(chatbot_output(userText,a,b,c,d))
-
 
 @app.route("/redirect", methods=['GET', 'POST'])
 def getHosp():
