@@ -9,7 +9,6 @@ from chat import load_chatbot,chatbot_output
 from scrap import get_doctors
 
 app = Flask(__name__)
- 
 
 def predict(values, dic):
     if len(values) == 8:

@@ -12,10 +12,6 @@ options = webdriver.ChromeOptions()
 options.add_argument('--headless')
 # driver = webdriver.Chrome(options=options)
 
-# options = webdriver.FirefoxOptions()
-# options.add_argument('--headless')
-# driver = webdriver.Firefox(options=options)
-#driver = webdriver.Firefox(executable_path="C://Users/shashank/Documents/geckodriver.exe")
 
 def get_doctors(city, pincode):
     t1 = time.perf_counter()

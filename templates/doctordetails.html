@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+        td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+        tr:nth-child(even) {
+  background-color: #dddddd;
+}
+    </style>
 <title>Test App</title>
 </head>
 <body>
-
+<!--<table>
+    <tr>
+    <th>Hospital Name</th>
+    <th>Website</th>
+    <th>Rating</th>
+          <th>Address</th>
+  </tr>
+        {% for k1, v1 in foobar.items() %}
+    <tr>
+            {% for k2, v2 in v1.items() %}
+        <td>{{v2}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>-->
 <table>
-{% for row in foo %}
-<tr>
-{% for cell in row %}
-<td> {{ cell}} </td>
-{% endfor %}
-<tr>
-{% endfor %}
-</table>
-
+    <tr>
+    <th>Hospital Name</th>
+    <th>Website</th>
+    <th>Rating</th>
+          <th>Address</th>
+  </tr>
+        {% for k1, v1 in foobar.items() %}
+    <tr>
+            {% for k2, v2 in v1.items() %}
+        <td>{{v2}}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
 </body>
 </html>
